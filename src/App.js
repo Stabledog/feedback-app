@@ -17,7 +17,7 @@ function App() {
                 {
                     comments.map(
                         (comment,index) => (
-                        <li>{index}:{comment.text}</li>
+                        <li key={index}> {comment.text}</li>
                         )
                     )
                 }
