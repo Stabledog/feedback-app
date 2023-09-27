@@ -3,9 +3,11 @@ import PropTypes from 'prop-types'
 
 function Header({text}) {
     return (
-        <div>
-            <h2>{text}</h2>
-        </div>
+        <header style={{ backgroundColor: 'blue', color: 'red' }}>
+            <div>
+                <h2>{text}</h2>
+            </div>
+        </header>
     )
 }
 
