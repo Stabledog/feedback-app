@@ -5,7 +5,10 @@ function FeedbackItem() {
     const [text, setText] = useState("This is an item");
 
     const handleClick = () => {
-        setRating(3);
+        setRating((prev) => {
+            console.log(`prev=${prev}`);
+            return prev<=9 && prev+1 || 10;
+        });
     }
 
     return (
