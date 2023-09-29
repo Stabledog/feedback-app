@@ -1,7 +1,12 @@
-
+import {ReactNode} from 'react'
 import PropTypes from 'prop-types';
 
-function Card({children,reverse}) {
+interface CardProps {
+    children: ReactNode,
+    reverse: boolean
+};
+
+function Card({children,reverse}:CardProps) {
     return (<div className={`card ${reverse && 'reverse'}`}>{children}</div>);
 }
 
