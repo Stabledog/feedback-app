@@ -11,7 +11,7 @@ function App() {
         <>
             <Header />
             <div className="container">
-                <Button text="Hello" />
+                <Button text="Hello" onClick={(e)=>console.log(e)}/>
                 <FeedbackList feedback={feedback} reverse={false}/>
             </div>
         </>

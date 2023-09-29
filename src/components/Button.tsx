@@ -1,9 +1,9 @@
 // TODO: Dummy component used in tsx conversion. Remove from final lab
-import React from 'react'
+import React, {MouseEventHandler} from 'react'
 //import { buttonStyles } from './Button.styles'
 
 type Props = {
-    onClick: any,
+    onClick: MouseEventHandler,
     text: string
 };
 
