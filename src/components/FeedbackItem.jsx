@@ -1,9 +1,9 @@
 import Card from './shared/Card.jsx'
 
-function FeedbackItem({item}) {
+function FeedbackItem({item,reverse}) {
 
     return (
-        <Card>
+        <Card reverse={reverse}>
             <div className="num-display">{item.rating}</div>
             <div className="text-display">{item.text}</div>
         </Card>
