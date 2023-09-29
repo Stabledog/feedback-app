@@ -6,11 +6,10 @@ interface CardProps {
     reverse: boolean
 };
 
-function Card({children,reverse}:CardProps) {
+export default function Card({children,reverse}:CardProps): JSX.Element {
     return (<div className={`card ${reverse && 'reverse'}`}>{children}</div>);
 }
 
-export default Card;
 
 Card.defaultProps = {
     reverse:false
