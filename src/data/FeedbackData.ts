@@ -1,4 +1,14 @@
-const FeedbackData = [
+
+
+export interface FeedbackItemT {
+    id: number,
+    rating: number,
+    text: string
+};
+
+type FeedbackDataT = FeedbackItemT[];
+
+export const FeedbackData: FeedbackDataT =  [
   {
     id: 1,
     rating: 10,
@@ -16,5 +26,4 @@ const FeedbackData = [
   },
 ]
 
-export default FeedbackData
 
