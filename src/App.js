@@ -10,7 +10,7 @@ function App() {
         <>
             <Header />
             <div className="container">
-                <FeedbackList feedback={feedback} reverse={true}/>
+                <FeedbackList feedback={feedback} reverse={false}/>
             </div>
         </>
     );
