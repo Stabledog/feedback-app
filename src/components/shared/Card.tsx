@@ -1,5 +1,5 @@
 import {ReactNode} from 'react'
-import PropTypes from 'prop-types';
+
 
 interface CardProps {
     children: ReactNode,
@@ -14,9 +14,4 @@ export default Card;
 
 Card.defaultProps = {
     reverse:false
-}
-
-Card.propTypes = {
-    reverse: PropTypes.bool,
-    children: PropTypes.node.isRequired
 }
