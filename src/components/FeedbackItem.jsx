@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Card from './shared/Card.jsx'
 
 function FeedbackItem({item,reverse}) {
@@ -11,3 +12,8 @@ function FeedbackItem({item,reverse}) {
 }
 
 export default FeedbackItem;
+
+FeedbackItem.propTypes = {
+    item: PropTypes.object.isRequired,
+    reverse: PropTypes.bool
+};
